@@ -36,6 +36,15 @@
             function closeModalCallback(){
                 console.log('Modal closed');
             }
+
+            function fadeOutSection(){
+                let sectionToFade = document.getElementById("section3");
+                sectionToFade.classList.remove("delayedFadeIn");
+                sectionToFade.classList.add("fadeOut");
+                setTimeout(() =>{
+                    sectionToFade.remove();
+                }, 5000);
+            }
         </script>
     </head>
     <body>
@@ -56,10 +65,11 @@
                 <button class="button" onclick="showSampleModal()">Show Modal</button>
             </span>
         </div>
-        <div class="section fadeIn">
+        <div id="section3" class="section delayedFadeIn">
             <h3>This is a separate section</h3>
             <span>
                 <p>Some content would go here, and be displayed nicely.</p>
+                <button class="button" onclick="fadeOutSection()">Fade Out section</button>
             </span>
         </div>
     </body>

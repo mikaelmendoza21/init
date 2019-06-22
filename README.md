@@ -40,6 +40,40 @@ Made up of decoupled modules *init-CSS* (styling) and *init-js* (components) .
     * onCloseCallback
 
 
+
     *Sample Initialization:*
 
-    `let modal = new Modal({title: Hello, content: This is a modal.});`
+
+    ```javascript
+    
+    var modal = new Modal({
+                    
+        // Modal Content
+
+        title: 'Hello',
+
+        content: 'This is a modal!', 
+        
+
+        // Styles classes (optional)
+
+        modalContainerClasses: ['modal'],   
+
+        headerClasses : ['modal-header'],
+
+        titleClasses: ['modal-title'],
+
+        closeButtonClasses: ['button close-modal-btn'],
+
+        closeButtonContainerClasses: ['modal-close'],
+
+        contentClasses: ['modal-content'],
+
+
+        // Callback Functions
+
+        onOpenCallback: openModalCallback,
+
+        onCloseCallback: closeModalCallback
+    });
+    ```
