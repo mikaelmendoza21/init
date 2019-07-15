@@ -54,7 +54,7 @@ class Modal {
         if (this.onCloseCallback != null){
             this.onCloseCallback();
         }
-        parent.removeChild(this.modal);
+        parent.removeChild(this.modal); // TODO: do not remove - make it reusable (let client decide)
     }
 
     joinStyleClasses(classArray){
