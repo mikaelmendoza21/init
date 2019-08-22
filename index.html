@@ -49,20 +49,21 @@
     </head>
     <body>
         <div class="menu">
-            <div class="menu-home">Home</div>
-            <div class="menu-item">Section 1</div>
-            <div class="menu-item">Section 2</div>
-            <div class="menu-item">Section 3</div>
-            <button class="menu-toggle" onclick=""></button>
+            <a href="#" class="menu-home">Home</a>
+            <a href="#welcome" class="menu-item">Section 1</a>
+            <a href="#section2" class="menu-item">Section 2</a>
+            <a href="#section3" class="menu-item">Section 3</a>
+            <button class="menu-toggle" onclick="toggleMenu()"></button>
         </div>
-        <div class="section fadeIn">
+        <div id="welcome"  class="section fadeIn">
             <h1 class="section-title">Welcome!</h1>
             <h3>This is a simple <i>fadeIn</i></h3>
         </div>
-        <div class="section delayedFadeIn">
+        <div id="section2" class="section delayedFadeIn">
             <h3 class="section-title">Next section</h3>
             <div>
                 <p>This paragraph has the <i>delayedFadeIn</i> class.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <button class="button" onclick="showSampleModal()">Show Modal</button>
             </div>
         </div>
@@ -70,6 +71,7 @@
             <h3 class="section-title">Another section</h3>
             <div>
                 <p>Some content would go here, and be displayed nicely.</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                 <button class="button" onclick="fadeOutSection()">Fade Out section</button>
             </div>
         </div>
